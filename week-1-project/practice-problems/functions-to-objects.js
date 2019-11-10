@@ -132,7 +132,9 @@ try {
 
     const obj = {
       array: [3],
-      mergeArrays: function (arrToMerge) { }
+      mergeArrays: function (arrToMerge) {
+        return [...this.array, ...arrToMerge];
+       }
     }
 
 
@@ -166,7 +168,9 @@ try {
 
     const obj = {
       array: [3],
-      mergeArrays: function (arrToMerge) { }
+      mergeArrays: function (arrToMerge) {
+        
+       }
     }
 
     obj.mergeArrays([2]);
