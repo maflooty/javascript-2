@@ -93,10 +93,11 @@ try {
     { name: 'fifth', args: [2, 3], expected: 'hi!' },
   ];
   function earlyReturn1(a, b) {
-    if (null) return 'string'; // replace null with your logic!
+    if (typeof a === "string") return "string";
+     
     console.assert(typeof a !== 'string', 'if a is a string, this assert should not be reached');
 
-    if (null) return 'boolean'; // replace null with your logic!
+    if (typeof b === 'boolean') return 'boolean'; // replace null with your logic!
     console.assert(typeof b !== 'boolean', 'if b is a boolean, this assert should not be reached');
 
     return 'hi!';
