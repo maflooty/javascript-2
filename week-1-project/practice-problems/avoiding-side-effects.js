@@ -207,6 +207,15 @@ try {
   ];
   function repeatItems(items, numRepeats) {
     // write me!
+    let result = items.map(e => { 
+      const arr1 = []
+      for (let i=0; i< numRepeats; i++){
+      arr1.push(e);  
+      }
+      return arr1;
+    });
+  return result;
+
   }
   repeatItems.display = true;
   evaluate(repeatItems, repeatItemsTests);
