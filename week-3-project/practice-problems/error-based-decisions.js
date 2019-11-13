@@ -35,10 +35,10 @@ try {
   function exercise1(arg) {
     const result = mightReturnAnError(arg);
 
-    if (null) { // write this condition
-      // write me!
+    if (result instanceof Error) { // write this condition
+     return false // write me!
     } else {
-      // write me!
+     return true // write me!
     }
 
   }
@@ -59,7 +59,12 @@ try {
   ]
   function exercise2(arg) {
     const result = mightReturnAnError(arg);
-
+    if (result instanceof Error) { // write this condition
+      return result.message;
+     } else {
+       return arg;
+        
+     }
     // write me!
 
   }
@@ -81,7 +86,11 @@ try {
   ]
   function exercise3(arg) {
     const result = mightReturnAnError(arg);
-
+if (result instanceof Error) {
+  return result.message;
+}else {
+  return false;
+}
     // write me!
 
   }
