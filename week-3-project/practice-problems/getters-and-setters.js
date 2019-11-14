@@ -117,7 +117,7 @@ try {
       }
     }
 
-    // replace the null's to pass the asserts:
+    
 
     const obj1current1 = obj1.getCurrentEntry();
     console.assert(obj1current1 === 'bye!', 'assert 1');

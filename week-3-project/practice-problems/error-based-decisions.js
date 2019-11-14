@@ -113,7 +113,11 @@ if (result instanceof Error) {
     const result = mightReturnAnError(arg);
 
     // write me!
-
+    if (result instanceof Error) {
+      return [result.message];
+    } else {
+      return [null, arg];
+    }
   }
   exercise4.display = true;
   evaluate(exercise4, exercise4Tests);
